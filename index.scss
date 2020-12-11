@@ -1,0 +1,59 @@
+$main-background: #e0e0e0;
+$even-line-color: #d1d1d1;
+$short-url-btn-color: #ffffff;
+$link-color: #1100ff;
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+nav {
+  width: 100%;
+}
+.container-main {
+  width: 80vw;
+  margin: .5rem 10vw;
+  padding: .5rem;
+  background-color: $main-background;
+  table {
+    width: 100%;
+    th {
+      padding: .25rem;
+      button {
+        padding: .25rem;
+        border: 1px solid black;
+        border-radius: .25rem;
+      }
+      input {
+        width: 1px;
+        color: transparent;
+        background-color: transparent;
+        border: none;
+      }
+    }
+    a {
+      color: $link-color;
+    }
+    tr:nth-child(even) {
+      background-color: $even-line-color;
+    }
+  }
+  form {
+    input {
+      padding: .25rem;
+      width: 60vw;
+      border: 1px solid black;
+      border-radius: .25rem;
+    }
+    button {
+      padding: .25rem;
+      background-color: $short-url-btn-color;
+      border: 1px solid black;
+      border-radius: .25rem;
+      width: 10vw;
+      float: right;
+    }
+  }
+}
