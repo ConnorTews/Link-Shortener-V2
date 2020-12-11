@@ -4,7 +4,7 @@
 
   'website-image-link' => '',
 
-  'domainname' => 'https://ryot.cc/1/',
+  'domainname' => 'https://domain.com/',
 
   'file-path' => 'l/',
 
