@@ -69,6 +69,7 @@ nav {
     }
   }
   form {
+    border-radius: 0.25rem;
     input {
       padding: 0.25rem;
       width: 60vw;
@@ -83,5 +84,44 @@ nav {
       width: 10vw;
       float: right;
     }
+  }
+}
+.non-form {
+  margin-left: 20px;
+  input {
+    padding: 0.3rem;
+    border: 0.15rem solid black;
+    border-radius: 0.25rem;
+  }
+  button {
+    padding: 0.3rem;
+    border: 0.15rem solid black;
+    border-radius: 0.25rem;
+  }
+}
+.signup {
+  margin-left: 20px;
+  input {
+    padding: 0.3rem;
+    border: 0.15rem solid black;
+    border-radius: 0.25rem;
+  }
+  button {
+    padding: 0.3rem;
+    border: 0.15rem solid black;
+    border-radius: 0.25rem;
+  }
+}
+.signin {
+  margin-left: 20px;
+  input {
+    padding: 0.3rem;
+    border: 0.15rem solid black;
+    border-radius: 0.25rem;
+  }
+  button {
+    padding: 0.3rem;
+    border: 0.15rem solid black;
+    border-radius: 0.25rem;
   }
 }

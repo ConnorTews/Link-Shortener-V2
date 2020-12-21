@@ -1,4 +1,8 @@
-<?php session_start();
+<head>
+  <link rel="stylesheet" href="./css/index.min.css">
+</head>
+<?php 
+session_start();
 $setting = require 'settings.php';
 
 if ($setting['public'] === 'true') {
@@ -8,7 +12,7 @@ if ($setting['public'] === 'true') {
 if (empty($_SESSION['username'])) {
   if ($setting['public'] === 'false') {
     echo '
-  <form action="./scripts/signin.inc.php" method="post">
+  <form class="non-form" action="./scripts/signin.inc.php" method="post">
     <label for="username">Sign in</label>
     <input type="text" name="username">
     <input type="password" name="password">

@@ -2,7 +2,7 @@
 
   'website-name' => 'Test Name',
 
-  'website-image-link' => '',
+  'website-image-link' => './logo.svg',
 
   //Your domain # Needs to have a slash at the end #
   'domainname' => 'https://domain.com/',

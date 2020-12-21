@@ -20,6 +20,10 @@ if (!isset($_POST['signup-sub'])) {
   $uname = stripslashes($uname);
   $pword = stripslashes($pword);
   $rpwrd = stripslashes($rpwrd);
+
+  if (!file_exists("../users/")) {
+    mkdir("../users", 0700);
+  }
   $userfile = '../users/'.$uname.'.php';
   if (file_exists($userfile)) {
     header("Location: ../?error=4");
