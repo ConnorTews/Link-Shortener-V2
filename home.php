@@ -6,17 +6,6 @@ if (preg_match($pat, $url) == 1) {
   exit();
 }
 ?>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><?php echo $setting['website-name']; ?></title>
-  <link rel="shortcut icon" href="<?php echo $setting['website-image-link']; ?>" type="image/x-icon">
-  <link rel="manifest" href="./manifest.json">
-  <meta name="description" content="Link shortener">
-</head>
 
 <body>
   <script>
@@ -100,6 +89,9 @@ if (preg_match($pat, $url) == 1) {
       <tr>
         <th>Long URL</th>
         <th>Short URL</th>
+        <?php
+        if ($setting['view-counter'] === "true") { echo '<th>Clicks</th>';}
+        ?>
         <th></th>
         <th></th>
       </tr><?php require './scripts/loader.php'; ?>

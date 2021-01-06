@@ -1,22 +1,24 @@
 <?php
 $setting = include './settings.php';
 $fpath = $setting['file-path'];
-$fpath = $fpath."*";
-// echo $fpath;
+$fpath = $fpath . "*";
 $fileList = glob($fpath);
 foreach ($fileList as $filename) {
-  // echo $filename;
   $data = include './' . $filename . '/data.php';
+  $click = include './' . $filename . '/click.php';
   $longlink = $data['longlink'];
   $shortlink = $data['shortlink'];
   $id = $data['id'];
   echo  '
       <tr>
         <th>
-          <a target="_blank" href="'.$longlink.'">'.$longlink.'</a>
+          <a target="_blank" href="' . $longlink . '">' . $longlink . '</a>
         </th>
         <th>
           <a target="_blank" href="' . $shortlink . '">' . $shortlink . '</a>
+        </th>
+        <th>
+          ' . $click['click'] . '
         </th>
         <th>
           <input type="text" name="' . $filename . '" id="' . $id . '" value="' . $shortlink . '">

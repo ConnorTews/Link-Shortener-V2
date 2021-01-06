@@ -5,7 +5,10 @@
   'website-image-link' => './logo.svg',
 
   //Your domain # Needs to have a slash at the end #
-  'domainname' => 'https://domain.com/',
+  'domainname' => 'http://localhost/Link-Shortener-V2/',
+
+  //If you want to count how many clicks a link gets
+  'view-counter' => 'true',
 
   // The file name after the domain name # Needs a slash at the end #
   'file-path' => 'l/',

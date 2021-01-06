@@ -18,7 +18,6 @@ if (!isset($_POST['link-delete'])) {
     header("Location: ../?error=3");
     exit();
   }
-
   if ($setting['linkbackup'] === 'true') {
     $dirpath = "../" . $setting['backupfoldername'] . "/";
     if (!file_exists($dirpath) && !is_dir($dirpath)) {

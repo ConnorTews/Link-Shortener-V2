@@ -1,10 +1,20 @@
+<?php 
+// session_start();
+$setting = require 'settings.php';
+?>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
+  <title><?php echo $setting['website-name']; ?></title>
+  <link rel="shortcut icon" href="<?php echo $setting['website-image-link']; ?>" type="image/x-icon">
+  <link rel="manifest" href="./manifest.json">
+  <meta name="description" content="Link shortener">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/index.min.css">
 </head>
-<?php 
-session_start();
-$setting = require 'settings.php';
-
+<?php
 if ($setting['public'] === 'true') {
   require './home.php';
 }
